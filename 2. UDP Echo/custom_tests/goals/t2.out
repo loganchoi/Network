@@ -1,0 +1,17 @@
+PING localhost (127.0.0.1) 53 bytes of data.
+timed out
+53 bytes from localhost (127.0.0.1): ping_seq=2 time=25.011 ms
+53 bytes from localhost (127.0.0.1): ping_seq=3 time=223.211 ms
+timed out
+timed out
+timed out
+timed out
+timed out
+53 bytes from localhost (127.0.0.1): ping_seq=9 time=218.638 ms
+54 bytes from localhost (127.0.0.1): ping_seq=10 time=26.536 ms
+timed out
+54 bytes from localhost (127.0.0.1): ping_seq=12 time=544.941 ms
+
+--- localhost ping statistics ---
+12 packets transmitted, 5 received, 58.333% packet loss, time 1038.337ms
+rtt min/avg/max/mdev = 25.011/207.667/544.941/212.302 ms

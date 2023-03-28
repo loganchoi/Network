@@ -1,0 +1,14 @@
+image: python:latest
+
+generaltester:
+  script:
+  - pip3 install python-Levenshtein mypy black py2cfg
+  - apt-get update
+  - apt-get -y install graphviz curl wget
+  - bash grade.sh
+  timeout: 2 hours 30 minutes
+  artifacts:
+    when: always
+    paths:
+      - results.txt
+    expire_in: 1 month

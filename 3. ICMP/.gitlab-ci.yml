@@ -1,0 +1,14 @@
+image: fedora:latest
+
+generaltester:
+  script:
+  - dnf install -y graphviz python3-pip python3-devel gcc
+  - pip3 install --upgrade python-Levenshtein mypy black py2cfg
+  - pip3 install --upgrade --pre scapy[complete]
+  - bash grade.sh
+  timeout: 2 hours 30 minutes
+  artifacts:
+    when: always
+    paths:
+      - results.txt
+    expire_in: 1 month
